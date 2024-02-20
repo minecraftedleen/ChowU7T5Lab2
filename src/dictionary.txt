@@ -25537,8 +25537,7 @@ culicines
 culinary
 cull
 cullay
-cullay
-s
+cullays
 culled
 culler
 cullers
@@ -51068,8 +51067,7 @@ helicopting
 helicopts
 helio
 heliograph
-heliogr
-apher
+heliographer
 heliographers
 heliographic
 heliographies
@@ -76492,8 +76490,7 @@ outbark
 outbarked
 outbarking
 outbarks
-outb
-awl
+outbawl
 outbawled
 outbawling
 outbawls
@@ -101657,8 +101654,7 @@ sibs
 sibyl
 sibylic
 sibyllic
-s
-ibyls
+sibyls
 sic
 siccan
 sicced
