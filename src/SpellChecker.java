@@ -45,7 +45,25 @@ public class SpellChecker {
         int loopCounter = 0; // for testing
 
         /* TODO: IMPLEMENT ME */
+        int leftIdx = 0;
+        int rightIdx = dictionary.size() - 1;
+        while (leftIdx <= rightIdx) {
+            loopCounter++;
+            int middleIdx = (leftIdx + rightIdx) / 2;
+            int checker = dictionary.get(middleIdx).compareTo(word);
+            if (checker == 0) {
+                System.out.println("-- BINARY SEARCH: Number of words checked (loop iterations): " + loopCounter);
+                return true;
+            } else {
+                if (checker < 0) {
+                    leftIdx = middleIdx + 1;
+                } else {
+                    rightIdx = middleIdx - 1;
+                }
+            }
+        }
 
+        System.out.println("-- BINARY SEARCH: Number of words checked (loop iterations): " + loopCounter);
         return false;
     }
 
@@ -53,7 +71,7 @@ public class SpellChecker {
     // from the dictionary.txt text file into the "dictionary" instance variable!
     private void importDictionary() {
         try {
-            File myFile = new File("src\\dictionary.txt");
+            File myFile = new File("src//dictionary.txt");
             Scanner fileScanner = new Scanner(myFile);
             while (fileScanner.hasNext()) {
                 String data = fileScanner.nextLine();
